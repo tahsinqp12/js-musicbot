@@ -23,7 +23,7 @@ bot = new Discord.Client({
 console.log(process.pid);
 bot.on(`ready`, () => {
 	console.log(`${bot.user.username} ready!`)
-	bot.user.setActivity(`Music | ${prefix}`, { type: "streaming", url: "https://www.twitch.tv/twitch" });
+	bot.user.setActivity(`Music | ${prefix}`, { type: "streaming", url: "" });
 });
 process.on('unhandledRejection', console.error);
 bot.login(process.env.token ? process.env.token : require("./config.json").token);
